@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .box {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(/img/wall.jpeg);
+    }
+    .logo {
+      position: absolute;
+      font-size: 24px;
+      left: 40vw;
+      top: 15vh;
+      color: aliceblue;
+      /* color: blue; */
+    }
+    .menu {
+      position: absolute;
+      right: 9vw;
+      top: 4vh;
+      /* border: 2px solid; */
+    }
+    .menu ul li {
+      list-style-type: none;
+      display: inline;
+      /* border: 2px solid; */
+    }
+    .menu a {
+      text-decoration: none;
+      color: aliceblue;
+      padding: 0.4vw;
+      font-size: 20px;
+      /* border: 2px solid; */
+    }
+    .menu a:hover {
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+    .followus {
+      position: absolute;
+      right: -9vw;
+      top: 0vh;
+    }
+    .followus a {
+      padding: 0.5vw;
+    }
+    .login {
+      width: 16vw;
+      height: 36vh;
+      border: 2px solid white;
+      position: absolute;
+      right: 4vw;
+      top: 25vh;
+      padding: 10px 10px 0 10px;
+      /* position: relative; */
+
+      /* text-align: center; */
+    }
+    .login h1 {
+      margin: 20px;
+      color: white;
+    }
+
+    label {
+      width: 100vw;
+      color: white;
+      font-size: 18px;
+      padding-top: 20px;
+      padding: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 3px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      background: rgb(26, 115, 232);
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      color: white;
+      width: 100px;
+      /* margin-left: 25%; */
+    }
+    input[id="signup"] {
+      margin-top: 10px;
+      background: rgb(26, 115, 232);
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      color: white;
+      width: 100px;
+      /* margin-left: 25%; */
+    }
+    .login a {
+      padding-top: 10px;
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="logo">
+        <h1>Website Name</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">follow us</a></li>
+        </ul>
+        <div class="followus">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  src="/img/5296499_fb_facebook_facebook logo_icon.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/img/6929237_instagram_icon.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/img/4375108_logo_telegram_icon.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="/img/4375133_logo_youtube_icon.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="login">
+        <h1>Login</h1>
+        <label for="UserName">UserName</label>
+        <input type="text" placeholder="Enter UserName" />
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter Password" />
+        <input type="submit" value="Login" />
+        <input type="submit" id="signup" value="Sign up" />
+        <a href="#">Create New Account.....?</a>
+      </div>
+    </div>
+  </body>
+</html>
